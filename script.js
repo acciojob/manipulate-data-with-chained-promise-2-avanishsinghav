@@ -17,7 +17,7 @@ function manipulateArray(){
 	.then((filteredArr)=>{
 		return new Promise((resolve)=>{
 			setTimeout(()=>{
-				let MultiplyArr = arr.map(num => num*2);
+				let MultiplyArr = filteredArr.map(num => num*2);
 				document.getElementById("output").innerText = MultiplyArr.join(",");
 				resolve(MultiplyArr);
 			},2000)
